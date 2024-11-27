@@ -1,0 +1,237 @@
+/* Start */
+/* base atau keseluruhan (start) */
+
+body{background-color: #1B262C;
+    background: url('bg.jpg');
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    background-color: #1B262C;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #BBE1FA;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+.container {
+    margin: auto;
+    width: auto;
+    max-width: 1000px;
+	padding-right: 2%;
+	padding-left:2%;
+	padding-bottom: 2.5%;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(12px);
+}
+.content {
+    padding: 20px ;
+}
+.judul {
+    font-family: 'Bungee Shade', cursive;
+    font-style: italic;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.content table td {
+    padding-left: 2rem ;
+}
+.pesan {
+	margin-top: 20px;
+	margin-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+marquee {
+    font-size: 1.4rem;
+    background-color: #0f4c7500;
+    color: #BBE1FA;
+    margin-top: 20px;
+    padding: 1rem;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.pinjaman {
+    margin-top: 2rem;
+}
+
+
+/* base atau keseluruhan (end) */
+
+/* Input type (start) */
+
+::placeholder { 
+    color: white;
+    opacity: 0.3;
+}
+input[type=text], input[type=number],input[type=email], textarea, input[type=date] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    background: transparent !important;
+    outline: none;
+    height: 35px;
+    color: #ffff;
+    font-size: 15px;
+  }
+/* Input type (end) */
+
+/* Select box (start) */
+
+  .box select {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(3px);
+    background-color: #0F4C75;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+
+/* Select box (end) */
+
+/* radio (start) */
+
+input[type="radio"]{
+	display: none;
+}
+
+label span{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 30px;
+    transition: .25s ease;
+}
+
+label span:hover,
+input[type="radio"]:checked + span{
+    background-color: #1b262c6b
+}
+
+label span:before{
+    content: "";
+    background-color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .25s ease;
+    box-shadow:  inset 0 0 0 2px #0F4C75;
+}
+
+input[type="radio"]:checked + span:before{
+    box-shadow: inset 0 0 0 10px #0F4C75;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #0F4C75;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}  
+
+/* radio (end) */
+
+/* input type file (start) */
+
+::-webkit-file-upload-button {
+    color: white;
+    background-color: #0F4C75;
+    padding: 0.26rem ;
+    border: none;
+    
+}
+.inputfile{
+    background: #3282B8;
+    box-shadow: 5px 5px 10px black;
+}
+/* input type file (end) */
+
+/* submit dan reset button(start)*/
+
+input[type=submit],[type=reset] {
+    position: relative;
+    width: 100px;
+    background-color: #0F4C75;
+    color: #BBE1FA;
+    font-weight: 300;
+    cursor: pointer;
+    align-items: center;
+    appearance: none;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+input[type=reset]:hover {
+   background-color: #0F4C75;
+   border-color: #fff;
+   transition: all 0.1s ease-in-out;
+}
+input[type=submit]:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #00FF00 0 -3px 0 inset;
+     transform: translateY(-5px);
+    background-color: #0F4C75;
+}
+
+input[type=reset]:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #FF0000 0 -3px 0 inset;
+     transform: translateY(-5px);
+   
+}
+
+input[type=submit]:active {
+ box-shadow: #05225C 0 3px 7px inset;
+ transform: translateY(2px);
+}
+
+input[type=submit]:focus{
+   box-shadow: #C7872D 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #C7872D 0 -3px 0 inset;
+}
+
+/* submit dan reset button(end)*/
+
+/*end

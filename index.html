@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 4 - Form Pengajuan Pinjaman</title>
+    <link rel="icon" type="image/x-icon" href="logo.svg"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cinzel+Decorative:wght@400;900&family=Hubballi&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form method="POST" action="index.php">
+    <div class="container">
+        <div class="judul">
+            <h1>FORM PENGAJUAN PINJAMAN</h1>
+            <hr>
+          </div>
+          <div class="content">
+            <table border="0" align="center">
+                <tr>
+                    <td>Nama peminjam</td>
+                    <td>:</td>
+                    <td><input type='text' name='nama' placeholder='Nama lengkap' required></td>
+                </tr> 
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <label><input type="radio" name="jk" value="pria" required><span>Pria</span></label>
+                        <label><input type="radio" name="jk" value="wanita"><span>Wanita</span></td></label>       
+                </tr> 
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td>:</td>
+                    <td><input type="text" name='tempat' placeholder='Kota Lahir' required></td>
+                </tr> 
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" placeholder="dd-mm-yyyy" name="tanggal" required></td>
+                </tr> 
+                <tr>
+                    <td>Nama Ibu Kandung</td>
+                    <td>:</td>
+                    <td><input type="text" name='ibu' placeholder='Nama Ibu Kandung' required ></td>
+                </tr> 
+                <tr>
+                    <td>NIK</td>
+                    <td>:</td>
+                    <td><input type="number" name="nik" placeholder="no. NIK" required></td>
+                </tr> 
+                <tr>
+                    <td>No. Telepon</td>
+                    <td>:</td>
+                    <td><input type="number" name="nomor" placeholder="08xx xxxx xxxx" required></td>
+                </tr> 
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" placeholder="email" required></td>
+                </tr> 
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea rows="4" cols="50" name="alamat" placeholder="Alamat" required></textarea></td>
+                </tr> 
+                <tr>
+                    <td>Selfie dengan KTP</td>
+                    <td>:</td>
+                    <td>
+                    <input type="file" name="image" id="file" class="inputfile" required/>
+                    
+                </tr> 
+                <tr>
+                    <td>Jumlah penghasilan</td>
+                    <td>:</td>
+                    <td>
+                        <div class="box">
+                        <select name='penghasilan' id='penghasilan' required>
+                        <option selected="true" disabled="disabled" value="">Pilih</option>
+                        <option value="0-5 juta rupiah">0-5 juta rupiah</option>
+                        <option value="5-10 juta rupiah">5-10 juta rupiah</option>
+                        <option value="10-15 juta rupiah">10-15 juta rupiah</option>
+                        <option value="15-25 juta rupiah">15-25 juta rupiah</option>
+                        <option value="Di atas 25 juta rupiah">Di atas 25 juta rupiah</option>
+                        </select>
+                        </div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Jumlah Pinjaman</td>
+                    <td>:</td>
+                    <td><input type="number" name="pinjaman" placeholder="Nominal" required></td>
+                </tr> 
+                <tr>
+                    <td>Alasan pinjam</td>
+                    <td>:</td>
+                    <td>
+                        <div class="box">
+                        <select name='alasan' id='alasan' required>
+                        <option selected="true" disabled="disabled" value="">pilih</option>
+                        <option value="Modal Usaha">Modal Usaha</option>
+                        <option value="Biaya Pendidikan">Biaya Pendidikan</option>
+                        <option value="Biaya Kesehatan">Biaya Kesehatan</option>
+                        <option value="Kebutuhan Sekunder">Kebutuhan Sekunder</option>
+                        <option value="Tanpa keterangan">Tanpa keterangan</option>
+                        </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr><th colspan="2">
+                    <td><div class="pinjaman">Jangka waktu pinjaman :</div></td>
+                    </th>
+                </tr>
+                
+                <tr>
+                    <th colspan="3">
+                    <label><input type="radio" name="jangka" value="6 bulan" required><span>6 bulan</span></label>
+                    <label><input type="radio" name="jangka" value="12 bulan"><span>12 bulan</span></label>
+                    <label><input type="radio" name="jangka" value="24 bulan"><span>24 bulan</span></label>
+                    <label><input type="radio" name="jangka" value="36 bulan"><span>36 bulan</span></label>
+                    <label><input type="radio" name="jangka" value="48 bulan"><span>48 bulan</span></label>
+                    <label><input type="radio" name="jangka" value="60 bulan"><span>60 bulan</span></label>
+                    </th>
+                </tr>  
+            </table>
+        </div>
+            <div class="pesan">
+                <input type="submit" value="Ajukan" name="hitung">
+                <input type="reset" value="Hapus" name="reset"> 
+            </div>
+            <marquee>- Andreas Mardohar Kristianto/XIIA3/05 -</marquee>
+	    </div>
+      </div>
+    </div>
+</form>
+</body>
+</html>
